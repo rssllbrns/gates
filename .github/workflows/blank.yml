@@ -13,7 +13,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  job:
+  job1:
     environment: 
       name: production
       url: https://www.google.com/search?q=one
@@ -21,7 +21,7 @@ jobs:
       - name: job1.step1
         run: echo job1.step1
 
-  job:
+  job2:
     environment: 
       name: test
       url: https://www.google.com/search?q=two
@@ -31,7 +31,7 @@ jobs:
           echo job2.step1
           echo https://www.google.com/search?q=two
 
-  job:
+  job3:
     environment: 
       name: test
       url: https://www.google.com/search?q=three
