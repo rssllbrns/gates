@@ -14,6 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   job1:
+    runs-on: ununtu-latest
     environment: 
       name: production
       url: https://www.google.com/search?q=one
@@ -22,6 +23,7 @@ jobs:
         run: echo job1.step1
 
   job2:
+    runs-on: ununtu-latest
     environment: 
       name: test
       url: https://www.google.com/search?q=two
@@ -32,6 +34,7 @@ jobs:
           echo https://www.google.com/search?q=two
 
   job3:
+    runs-on: ununtu-latest
     environment: 
       name: test
       url: https://www.google.com/search?q=three
