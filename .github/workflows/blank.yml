@@ -23,6 +23,7 @@ jobs:
         run: echo job1.step1
 
   job2:
+    needs: job1
     runs-on: ununtu-latest
     environment: 
       name: test
@@ -34,6 +35,7 @@ jobs:
           echo https://www.google.com/search?q=two
 
   job3:
+    needs: job2
     runs-on: ununtu-latest
     environment: 
       name: test
